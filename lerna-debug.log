@@ -1,0 +1,125 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '6.4.1',
+0 silly argv   '$0': 'D:\\Program Files\\nodejs\\node_global\\node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v6.4.1
+2 verbose rootPath D:\work\lernause\lernause
+3 verbose session ffaf486f921940f7
+4 verbose user-agent lerna/6.4.1/node@v16.17.1+x64 (win32)
+5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '6.4.1' }
+6 verbose rootPath D:\work\lernause\lernause
+7 info current version 0.0.3
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly getCurrentBranch
+11 verbose currentBranch main
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "v0.0.3-1-gd4e7d33" => {"lastTagName":"v0.0.3","lastVersion":"v0.0.3","refCount":"1","sha":"d4e7d33","isDirty":false}
+18 info Looking for changed packages since v0.0.3
+19 silly checking diff packages/footer
+20 silly found diff in packages/footer/package.json
+21 verbose filtered diff [ 'packages/footer/package.json' ]
+22 silly checking diff packages/header
+23 silly found diff in packages/header/package.json
+24 verbose filtered diff [ 'packages/header/package.json' ]
+25 silly checking diff packages/remixapp
+26 silly no diff found in remixapp
+27 verbose updated footer
+28 verbose updated header
+29 verbose updated remixapp
+30 verbose git-describe undefined => "v0.0.3-1-gd4e7d33"
+31 silly git-describe parsed => {"lastTagName":"v0.0.3","lastVersion":"v0.0.3","refCount":"1","sha":"d4e7d33","isDirty":false}
+32 info execute Skipping releases
+33 silly lifecycle No script for "preversion" in "root", continuing
+34 silly lifecycle No script for "preversion" in "footer", continuing
+35 silly lifecycle No script for "preversion" in "header", continuing
+36 silly lifecycle No script for "version" in "header", continuing
+37 silly lifecycle No script for "version" in "footer", continuing
+38 silly lifecycle No script for "preversion" in "remixapp", continuing
+39 silly lifecycle No script for "version" in "remixapp", continuing
+40 silly lifecycle No script for "version" in "root", continuing
+41 silly gitAdd [
+41 silly gitAdd   'packages/header/package.json',
+41 silly gitAdd   'packages/header/package-lock.json',
+41 silly gitAdd   'packages/footer/package.json',
+41 silly gitAdd   'packages/footer/package-lock.json',
+41 silly gitAdd   'packages/remixapp/package.json',
+41 silly gitAdd   'packages/remixapp/package-lock.json',
+41 silly gitAdd   'lerna.json'
+41 silly gitAdd ]
+42 silly gitCommit v0.0.4
+43 verbose git [ 'commit', '-m', 'v0.0.4' ]
+44 silly gitTag v0.0.4 git tag %s -m %s
+45 verbose git [ 'tag', 'v0.0.4', '-m', 'v0.0.4' ]
+46 silly lifecycle No script for "postversion" in "footer", continuing
+47 silly lifecycle No script for "postversion" in "header", continuing
+48 silly lifecycle No script for "postversion" in "remixapp", continuing
+49 silly lifecycle No script for "postversion" in "root", continuing
+50 info git Pushing tags...
+51 silly gitPush origin main
+52 info publish Publishing packages to npm...
+53 notice Skipping all user and access validation due to third-party registry
+54 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+55 warn ENOLICENSE Packages footer and header are missing a license.
+55 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+55 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+56 silly getCurrentSHA
+57 verbose getCurrentSHA 4274d76d346c88e4ba0cfc7dcc98ca40342485d4
+58 silly lifecycle No script for "prepublish" in "root", continuing
+59 silly lifecycle No script for "prepare" in "root", continuing
+60 silly lifecycle No script for "prepublishOnly" in "root", continuing
+61 silly lifecycle No script for "prepack" in "root", continuing
+62 verbose pack-directory packages\footer
+63 verbose pack-directory packages\header
+64 silly lifecycle No script for "prepublish" in "footer", continuing
+65 silly lifecycle No script for "prepublish" in "header", continuing
+66 silly lifecycle No script for "prepare" in "footer", continuing
+67 silly lifecycle No script for "prepare" in "header", continuing
+68 silly lifecycle No script for "prepublishOnly" in "footer", continuing
+69 silly lifecycle No script for "prepack" in "footer", continuing
+70 silly lifecycle No script for "prepublishOnly" in "header", continuing
+71 silly lifecycle No script for "prepack" in "header", continuing
+72 silly lifecycle No script for "postpack" in "footer", continuing
+73 verbose packed packages\footer
+74 silly lifecycle No script for "postpack" in "header", continuing
+75 verbose packed packages\header
+76 silly lifecycle No script for "postpack" in "root", continuing
+77 verbose publish footer
+78 verbose publish header
+79 silly FetchError: request to http://localhost:4873/footer failed, reason: connect ECONNREFUSED 127.0.0.1:4873
+79 silly     at ClientRequest.<anonymous> (D:\Program Files\nodejs\node_global\node_modules\lerna\node_modules\minipass-fetch\lib\index.js:130:14)
+79 silly     at ClientRequest.emit (node:events:513:28)
+79 silly     at Socket.socketErrorListener (node:_http_client:481:9)
+79 silly     at Socket.emit (node:events:525:35)
+79 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+79 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+79 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+79 silly  FetchError: request to http://localhost:4873/footer failed, reason: connect ECONNREFUSED 127.0.0.1:4873
+79 silly     at ClientRequest.<anonymous> (D:\Program Files\nodejs\node_global\node_modules\lerna\node_modules\minipass-fetch\lib\index.js:130:14)
+79 silly     at ClientRequest.emit (node:events:513:28)
+79 silly     at Socket.socketErrorListener (node:_http_client:481:9)
+79 silly     at Socket.emit (node:events:525:35)
+79 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+79 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+79 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+79 silly   code: 'ECONNREFUSED',
+79 silly   errno: 'ECONNREFUSED',
+79 silly   syscall: 'connect',
+79 silly   address: '127.0.0.1',
+79 silly   port: 4873,
+79 silly   type: 'system'
+79 silly }
+80 error ECONNREFUSED request to http://localhost:4873/footer failed, reason: connect ECONNREFUSED 127.0.0.1:4873
+81 error FetchError: request to http://localhost:4873/footer failed, reason: connect ECONNREFUSED 127.0.0.1:4873
+81 error     at ClientRequest.<anonymous> (D:\Program Files\nodejs\node_global\node_modules\lerna\node_modules\minipass-fetch\lib\index.js:130:14)
+81 error     at ClientRequest.emit (node:events:513:28)
+81 error     at Socket.socketErrorListener (node:_http_client:481:9)
+81 error     at Socket.emit (node:events:525:35)
+81 error     at emitErrorNT (node:internal/streams/destroy:157:8)
+81 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
